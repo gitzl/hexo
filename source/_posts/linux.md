@@ -10,15 +10,12 @@ lsb_release -a
 ```
 > centos crontab操作
 ``` bash
-cat /ect/crontab
-crontab -e
+sudo crontab -e 
+crontrol+x   yes crontrol+m  保存数据
 * * * * * date >> /home/date1.txt　　测试例子
 crontab -l 查看
 crontab -r 终止
-/sbin/service crond start
-/sbin/service crond stop
-/sbin/service crond restart
-/sbin/service crond reload
+sudo service cron restart 重启
 ```
 > vi/vim 常用命令
 ```bash
